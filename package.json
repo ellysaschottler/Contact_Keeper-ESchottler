@@ -1,0 +1,25 @@
+{
+  "name": "contact_keeper-eschottler",
+  "version": "1.0.0",
+  "description": "Traversy project to build a full stack MERN application witih a complete backend api we can interact with React.  It will use JWT for authentication.  This will be an application with user login to keep track of contacts.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.11",
+    "express": "^4.18.3",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
