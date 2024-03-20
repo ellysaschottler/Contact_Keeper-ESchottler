@@ -17,7 +17,7 @@ const onSubmit = e => {
 }
 
     return (
-        <div classNasme="form-container">
+        <div className="form-container">
             <h1>
                 Account <span className="text-primary">Login</span>
             </h1>
