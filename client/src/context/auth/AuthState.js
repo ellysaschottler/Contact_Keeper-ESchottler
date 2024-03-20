@@ -87,7 +87,9 @@ const login = async formData => {
 
 // Logout
 
-const logout = () => console.log('logout user')
+const logout = () => dispatch({ type: LOGOUT })
+
+
 // Clear Errors
 
 const clearErrors = () => dispatch({ type: CLEAR_ERRORS })
