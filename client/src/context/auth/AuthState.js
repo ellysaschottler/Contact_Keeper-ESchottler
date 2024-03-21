@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useContext } from 'react';
 import axios from 'axios';
 import AuthContext from './authContext';
 import authReducer from './authReducer';
@@ -14,6 +14,13 @@ import {
     CLEAR_ERRORS
   } from '../types';
 
+
+// Create a custom hook to use the auth context
+
+export const useAuth = () => {
+    const { state, dispatch } = useContext(AuthContext);
+    return [state, dispatch];
+  };
 const AuthState = props => {
     const initialState = {
         token: localStorage.getItem('token'),
